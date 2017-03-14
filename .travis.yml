@@ -6,7 +6,8 @@ deploy:
   provider: releases
   api_key:
     secure: IcKlvNrzq2ZtH4iw5YUz08i/ewQRYIzjYib+P9zJHJU2I+IHIMBA5lP0pq3/qX1KGogHvoMFIN/j41cRQbnsTXP0VzvW+CPbiWrM0peced4xqLGDH47Cnm0CQ2zm4iXLTLUS27bEqiRQwczKM6i23nEkv44V/s1/Wvi79cH3qoT1y+pvMZ8K80i8wF3RAILMMcQa3DTD6OzooPqdmroEFHI/rmVGsXfqrrzdzR9X7fesBv6PDpc0M4yeOvyrrY7/G5m+ygSS8jj2LU5GzxiPhhXa49RiA8IQqAEjkkdRdNQcH5cQRRGboc971WLAawXBx+MX4Ochx2VVwaQRvvBEaLoL6+Ux+8BDUYypjp6mcV7MPm/tg+reXwEcqGleCsLx3TMzAURjoykemh5P18tD9TVf0VQj+wv1gQioTZaMvPjQAQcIgC7cpXAVwpknBYkkUT+dUWhK0PSPerDKxa6NAODF+QAEjDQKB4iT8rYWZRh0QxvyTkeSU0z+wj6iKb5tmRaMyFcNtLal+I6VO1cAAwYqiPN9jqbeiMsLhZlXZGkgJ1NswW6jMqf2tOviwjJzNEibJx9pY3J8hKxs3DCOMojXvJ52qtL8AiwUZ0ldXbslRTxuxNPMgGrUyHMN5LAWxEdTKAe0lkh71RyHcNbJJrjNU9pLnZvxP7gZRWsKPRU=
-  file: aaa.txt
+  file_glob: true
+  file: dir/*
   on:
     tags: true
     repo: omochi/travis-ci-test
